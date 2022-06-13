@@ -79,8 +79,8 @@ function rps(){
   let howManyRounds = parseInt(prompt("How many rounds are you looking to play?"));
 
   for (i=0; i< howManyRounds; i++){
-    compTurn = computerPlay();
     playerTurn = userPlay();
+    compTurn = computerPlay();
     Winner = gameplay(playerTurn,compTurn);
 
     if (Winner.includes("win")){
